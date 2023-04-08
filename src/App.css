@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #090A0E;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    display: flex;
+    flex-flow: column;
+}
+.headerWrap{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.backdropImg {
+    background-size: cover;
+    background-position: top center;
+    height: 90vh;
+    width: 100vw;
+    padding-bottom: 50px;
+    position: relative;
+}
+h1 {
+    font-size: 80px;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.mainContainer {
+    background-color: #0F1014;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80vw;
+    margin: 0 auto;
+}
+.button {
+    margin: 20px 0;
+    background: #0F1014;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid gray;
+}
+.button:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+.navMain{
+    background: #090A0E;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    letter-spacing: 2px;
+    margin-left: 110px;
+}
+.navMain:hover {
+    box-shadow: 0 5px 5px rgba(2, 63, 56, 0.5);
+}
+.backBtn{
+    position: absolute;
+    right: 700px;
+    top: 300px;
+}
+.movieCard {
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+.movieCard img {
+    height: 355px;
+    max-width: 100%;
+}
+.movieInfo {
+    padding: 15px 0;
+}
+.movieTitle {
+    margin: 0 0 0 35px;
+}
+.movie-title1 {
+    margin: 0;
+} 
+.ratings {
+    position: absolute;
+    right: 40px;
+    top: 330px;
+    border: 1px solid gray;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #75dd9d;;
+}
+.searchBar {
+    position: relative;
+    align-self: center;
+}
+.search {
+    border: 1px solid darkslategray;
+    outline: transparent;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: white;
+}
+.searchSubmit {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: transparent;
+    color:  white;
+    border: none;
+    cursor: pointer;
+}
+.appName{
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+.trailerContainer{
+    position: absolute;
+    right: 1060px;
+    top: 400px;
+}
+.trailerIframe{
+    position: absolute;
+    top: -300px;
+}
+.movieContainer{
+    position: absolute;
+    top: 460px;
+    width: 80vw;
+    margin-left: 10vw;
+}
+.showMap{
+    position: absolute;
+    top: 406px;
+    right: 380px;
+}   
+.mapContainer{
+    position: absolute;
+    top: 100px;
+    right: 15px;
+    height: 460px;
+    width: 360px;
+}
+.mapIframe{
+    width: 360px;
+    height: 460px;    
+}
+.errorMsg{
+    position: absolute;
+    right: 660px;
+    top: 130px;
+}
