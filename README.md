@@ -6,7 +6,7 @@
 - open http://localhost:5173/ in the browser
 
 ### Introduction
-- Built with Vite (React) and Node.js
+- Built with React (Vite) and Node.js
 - App features
   1. List popular movies 
   2. Play movie trailers
