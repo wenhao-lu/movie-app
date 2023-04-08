@@ -6,10 +6,11 @@ import MovieCard from "./components/MovieCard"
 function App() {
     const MOVIE_URL = "https://api.themoviedb.org/3/"
     const SEARCH_URL = MOVIE_URL + "search/movie"
-    const MOVIE_API = "e18bebeab58bb715c55865d4c7abf22f"
-    const GOOGLE_API = "AIzaSyD0bsRny4pe7bANsUTR8MMml0ko5Yr-AU4"
     const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280"
     const youtube_url = "https://www.youtube.com/embed/"
+    // Please put API keys here
+    const MOVIE_API = ""
+    const GOOGLE_API = ""
 
     const [playTrailer, setPlayTrailer] = useState(false)
     const [trailer, setTrailer] = useState(null)
