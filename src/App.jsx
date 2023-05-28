@@ -2,10 +2,14 @@ import {useEffect, useState} from "react"
 import './App.css'
 import MovieCard from "./components/MovieCard"
 import { MOVIEAPI, GOOGLEAPI } from "./config.js";
-
+import { useAuth } from './Auth';
+import Signup from './components/Signup';
+import Login from './components/Login';
 
 
 function App() {
+    const { user } = useAuth();
+
     const MOVIE_URL = "https://api.themoviedb.org/3/"
     const SEARCH_URL = MOVIE_URL + "search/movie"
     const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280"
@@ -123,7 +127,7 @@ function App() {
             {/* render the header, including main page(return back when finishing search), app name and the search bar */}
             <header className="header">
                 <div className="headerWrap">
-                    <button className="navMain" onClick={fetchMovies}>MAIN</button>
+                    <Login />
                     <p className="appName">Your Private Movie Collection</p>
                     {/* search bar */}
                     <form className="searchBar" onSubmit={searchMovies}>

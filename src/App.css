@@ -75,7 +75,7 @@ h1 {
 .play-trailer:hover{
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 }
-
+/*
 .navMain{
     background: #090A0E;
     color: white;
@@ -89,6 +89,27 @@ h1 {
 }
 .navMain:hover {
     color:rgb(93, 174, 154);
+}
+*/
+.loginContainer{
+    align-self: center;
+}
+.userName,.userPassword{
+    border: 1px solid darkslategray;
+    background-color: transparent;
+    padding: 5px 10px;
+    color: white;
+    width: 6vw;
+    margin-right: 4px;
+}
+.loginBtn,.signupBtn{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.loginBtn:hover,.signupBtn:hover{
+    color: rgb(93, 174, 154);
 }
 .backBtn{
     position: absolute;
@@ -148,11 +169,43 @@ h1 {
 .searchSubmit:hover{
     color: rgb(93, 174, 154);
 }
+.error{
+    z-index: 1;
+    color: red;
+    position: absolute;
+    top: 2.4vh;
+    left: 28vw;
+}
+.welcomeP{
+    margin-right:146px;
+}
+.loggedName{
+    color: #75dd9d;
+    margin-left: 1vw;
+}
+.logoutBtn{
+    background-color: transparent;
+    color:  white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 4.3vh;
+    left:20vw;
+}
+.logoutBtn:hover{
+    color: rgb(93, 174, 154);
+}
+.topContainer{
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+}
+
 .appName{
     font-size: 22px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
-    margin-left: 5vw;
+    margin-right: 2vw;
 }
 .trailerContainer{
     position: absolute;
