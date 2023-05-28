@@ -4,6 +4,7 @@ import MovieCard from "./components/MovieCard"
 import { MOVIEAPI, GOOGLEAPI } from "./config.js";
 
 
+
 function App() {
     const MOVIE_URL = "https://api.themoviedb.org/3/"
     const SEARCH_URL = MOVIE_URL + "search/movie"
