@@ -123,7 +123,7 @@ function App() {
             <header className="header">
                 <div className="headerWrap">
                     <button className="navMain" onClick={fetchMovies}>MAIN</button>
-                    <p className="appName">Humber Movie App</p>
+                    <p className="appName">Your Private Movie Collection</p>
                     {/* search bar */}
                     <form className="searchBar" onSubmit={searchMovies}>
                         <input className="search" type="text" id="search" placeholder="Search for a movie" />
@@ -148,8 +148,8 @@ function App() {
                 {playTrailer && (
                     <iframe 
                         className="trailerIframe"
-                        width="560"
-                        height="360"
+                        width="1078"
+                        height="610"
                         src={`${youtube_url}${trailer.key}`}
                         frameborder="0"
                         allow="autoplay; encrypted-media"
@@ -163,7 +163,7 @@ function App() {
             {/* the button can be toggled show/close */}
             <div className="googleMap">
                 <button className="button showMap" onClick={() => setShowMap(!showMap)}> 
-                    {showMap ? 'Close Map' : 'Theaters'}
+                    {showMap ? 'Close Map' : 'Theatres'}
                 </button>
                 {showMap && (
                     <div className="mapContainer">

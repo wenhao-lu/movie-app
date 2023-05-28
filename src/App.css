@@ -21,7 +21,7 @@ body {
     background-size: cover;
     background-position: top center;
     height: 90vh;
-    width: 100vw;
+    width: 98vw;
     padding-bottom: 50px;
     position: relative;
 }
@@ -68,7 +68,7 @@ h1 {
     margin-left: 110px;
 }
 .navMain:hover {
-    box-shadow: 0 5px 5px rgba(2, 63, 56, 0.5);
+    color:rgb(93, 174, 154);
 }
 .backBtn{
     position: absolute;
@@ -106,6 +106,7 @@ h1 {
 .searchBar {
     position: relative;
     align-self: center;
+    width: 15vw;
 }
 .search {
     border: 1px solid darkslategray;
@@ -124,6 +125,9 @@ h1 {
     border: none;
     cursor: pointer;
 }
+.searchSubmit:hover{
+    color: rgb(93, 174, 154);
+}
 .appName{
     font-size: 22px;
     font-family: 'Ubuntu', sans-serif;
@@ -131,12 +135,13 @@ h1 {
 }
 .trailerContainer{
     position: absolute;
-    right: 1060px;
-    top: 400px;
+    right: 80vw;
+    top: 80vh;
 }
 .trailerIframe{
     position: absolute;
-    top: -300px;
+    top: -66vh;
+    z-index: 1;
 }
 .movieContainer{
     position: absolute;
@@ -146,19 +151,21 @@ h1 {
 }
 .showMap{
     position: absolute;
-    top: 406px;
-    right: 380px;
+    top: 80vh;
+    right: 10vw;
 }   
 .mapContainer{
     position: absolute;
-    top: 100px;
-    right: 15px;
+    top: 14vh;
+    right: 59vw;
     height: 460px;
     width: 360px;
 }
 .mapIframe{
-    width: 360px;
-    height: 460px;    
+    position: absolute;
+    width: 62.6vw;
+    height: 75vh;
+    z-index: 2;    
 }
 .errorMsg{
     position: absolute;
