@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react"
 import './App.css'
 import MovieCard from "./components/MovieCard"
+import { MOVIEAPI, GOOGLEAPI } from "./config.js";
 
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
     const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280"
     const youtube_url = "https://www.youtube.com/embed/"
     // Please put API keys here
-    const MOVIE_API = ""
-    const GOOGLE_API = ""
+    const MOVIE_API = MOVIEAPI
+    const GOOGLE_API = GOOGLEAPI
 
     const [playTrailer, setPlayTrailer] = useState(false)
     const [trailer, setTrailer] = useState(null)
