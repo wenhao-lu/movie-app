@@ -115,6 +115,16 @@ h1 {
     position: absolute;
     right: 700px;
     top: 300px;
+    margin: 20px 0;
+    background: #0F1014;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid gray;
 }
 .movieCard {
     position: relative;
