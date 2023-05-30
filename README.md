@@ -1,16 +1,32 @@
-# Movie App
-### Start the app
-- cd movie-app
-- npm i
-- npm run dev
-- open http://localhost:5173/ in the browser
+# Movie App - Your Private Movie Collection
 
-### Introduction
-- Built with React (Vite) and Node.js
-- App features
-  1. List popular movies 
-  2. Play movie trailers
-  3. Show nearby theaters in an embedded Google Map
-  4. API used: The Movie Database API, Google Map API
-  5. To check the API's performance in this app, the movies list result should match 
-  The Movie Database website https://www.themoviedb.org/movie
+Welcome to this Movie App! This project is a web application that allows you to explore and search for movies. You can view movie details, watch trailers, and even find nearby theatres using Google Maps integration. It's a perfect tool for movie enthusiasts and those who want to keep track of their favorite films.
+
+## Features
+
+- Simple and clean user interface
+- Search for movies using the search bar
+- Display latest movie information, including title, overview, and backdrop image
+- Play movie trailers within the application
+- Show nearby theatres on Google Maps within the application
+
+## Technologies Used
+
+- React.js: JavaScript library for building the user interface
+- CSS: Styling the components and layout
+- HTML: Structure of the web pages
+- API Integration: Integration with The Movie Database (TMDB) API and Google Maps API
+- Firebase: Backend authentication and hosting
+
+## Additional Features in progress
+
+- Authentication for user login and signup
+- Watchlist function for registrated users
+
+## Online Demo
+
+You can access the online demo of the application [here](http://movie.wlkevin.com/).
+
+## License
+
+This project is licensed under the [MIT License].
