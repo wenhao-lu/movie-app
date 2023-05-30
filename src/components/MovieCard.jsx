@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as emptyHeart } from "@fortawesome/free-regular-svg-icons";
 
+// render movie cards
 const MovieCard = ({movie, selectMovie}) => {
 
     let POSTER_URL = "https://image.tmdb.org/t/p/w342"

@@ -3,8 +3,8 @@ import './App.css'
 import MovieCard from "./components/MovieCard"
 import { MOVIEAPI, GOOGLEAPI } from "./config.js";
 import { useAuth } from './Auth';
-import Signup from './components/Signup';
 import Login from './components/Login';
+import Signup from './components/Signup';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     const SEARCH_URL = MOVIE_URL + "search/movie"
     const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280"
     const youtube_url = "https://www.youtube.com/embed/"
-    // Please put API keys here
+    // Please put your own API keys here
     const MOVIE_API = MOVIEAPI
     const GOOGLE_API = GOOGLEAPI
 
@@ -122,13 +122,14 @@ function App() {
     }
 
 
+
     return (
         <div className="App">
             {/* render the header, including main page(return back when finishing search), app name and the search bar */}
             <header className="header">
                 <div className="headerWrap">
                     <Login />
-                    <p className="appName">Your Private Movie Collection</p>
+                    <a href='/' className="appName"><p>Your Private Movie Collection</p></a>
                     {/* search bar */}
                     <form className="searchBar" onSubmit={searchMovies}>
                         <input className="search" type="text" id="search" placeholder="Search for a movie" />
@@ -194,6 +195,9 @@ function App() {
             {/* render the movie cards */}
             <div className={"mainContainer"}>
                 {renderMovies()}
+            </div>
+            <div className="footerText">
+                <p>&copy; 2023 - Kevin Wenhao Lu</p>
             </div> 
         </div>
     );

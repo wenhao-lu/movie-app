@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../Auth';
-import Signup from './Signup';
+
+// login module in process
 
 const Login = () => {
 
@@ -34,7 +35,9 @@ const Login = () => {
       <div className="loginContainer">
         <p className="welcomeP">Welcome Back <span className='loggedName'>{userName}</span></p>
         <button className="logoutBtn" onClick={handleLogout}>Log out</button>
+        <button className="watchlistBtn" >WATCHLIST</button>
       </div>
+      
     );
   }
   
@@ -92,3 +95,4 @@ const Login = () => {
 };
 
 export default Login;
+

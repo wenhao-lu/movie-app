@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useAuth } from '../Auth';
 
+
+// signup module in process
+
 const Signup = ({ handleRegistrationSuccess }) => {
   const { signup } = useAuth();
   const [username, setUsername] = useState('');
