@@ -1,11 +1,13 @@
 import {useEffect, useState} from "react"
 import './App.css'
 import MovieCard from "./components/MovieCard"
-import { MOVIEAPI, GOOGLEAPI } from "./config.js";
+// import { MOVIEAPI, GOOGLEAPI } from "./config.js";
 import { useAuth } from './Auth';
 import Login from './components/Login';
 import Signup from './components/Signup';
 
+const MOVIE_API = process.env.MOVIEAPI;
+const GOOGLE_API = process.env.GOOGLEAPI;
 
 function App() {
     const { user } = useAuth();
@@ -15,8 +17,6 @@ function App() {
     const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280"
     const youtube_url = "https://www.youtube.com/embed/"
     // Please put your own API keys here
-    const MOVIE_API = MOVIEAPI
-    const GOOGLE_API = GOOGLEAPI
 
     const [playTrailer, setPlayTrailer] = useState(false)
     const [trailer, setTrailer] = useState(null)
