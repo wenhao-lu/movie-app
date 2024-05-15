@@ -9,7 +9,7 @@ import Signup from './components/Signup';
 const MOVIE_API = process.env.REACT_APP_MOVIEAPI;
 const GOOGLE_API = process.env.REACT_APP_GOOGLEAPI;
 
-console.log(process.env.REACT_APP_MOVIEAPI);
+console.log('REACT_APP_MOVIEAPI:' + process.env.REACT_APP_MOVIEAPI);
 
 function App() {
     const { user } = useAuth();
