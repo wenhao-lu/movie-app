@@ -9,3 +9,4 @@ dist-ssr
 *.local
 
 src/config.js
+.env

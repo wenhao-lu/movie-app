@@ -6,8 +6,11 @@ import { useAuth } from './Auth';
 import Login from './components/Login';
 import Signup from './components/Signup';
 
-const MOVIE_API = process.env.MOVIEAPI;
-const GOOGLE_API = process.env.GOOGLEAPI;
+const MOVIE_API = process.env.REACT_APP_MOVIEAPI;
+const GOOGLE_API = process.env.REACT_APP_GOOGLEAPI;
+
+console.log(MOVIE_API);
+console.log(GOOGLE_API);
 
 function App() {
     const { user } = useAuth();
