@@ -1,15 +1,13 @@
 import {useEffect, useState} from "react"
 import './App.css'
 import MovieCard from "./components/MovieCard"
-// import { MOVIEAPI, GOOGLEAPI } from "./config.js";
+import { MOVIEAPI, GOOGLEAPI } from "./config.js";
 import { useAuth } from './Auth';
 import Login from './components/Login';
 import Signup from './components/Signup';
 
-const MOVIE_API = process.env.REACT_APP_MOVIEAPI;
-const GOOGLE_API = process.env.REACT_APP_GOOGLEAPI;
-
-console.log('REACT_APP_MOVIEAPI:' + process.env.REACT_APP_MOVIEAPI);
+const MOVIE_API = MOVIEAPI;
+const GOOGLE_API = GOOGLEAPI;
 
 function App() {
     const { user } = useAuth();
